@@ -286,8 +286,12 @@ const tick = () =>{
   //Update Material
   material.uniforms.uTime.value = elapsedTime
   material2.uniforms.uTime.value = elapsedTime
+  material3.uniforms.uTime.value = elapsedTime
+  material4.uniforms.uTime.value = elapsedTime
+  material5.uniforms.uTime.value = elapsedTime
+  material6.uniforms.uTime.value = elapsedTime
 
-
+  mesh.rotation.z +=0.01
   // Update controls
   controls.update()
 

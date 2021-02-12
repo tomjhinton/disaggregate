@@ -55,6 +55,7 @@ const material = new THREE.ShaderMaterial({
   vertexShader: vertexShader1,
   fragmentShader: fragmentShader1,
   transparent: true,
+  depthWrite: false,
   side: THREE.DoubleSide,
   uniforms: {
     uFrequency: {
@@ -80,6 +81,7 @@ const material2 = new THREE.ShaderMaterial({
   vertexShader: vertexShader2,
   fragmentShader: fragmentShader2,
   transparent: true,
+  depthWrite: false,
   side: THREE.DoubleSide,
   uniforms: {
     uFrequency: {
@@ -109,6 +111,7 @@ const material3 = new THREE.ShaderMaterial({
   vertexShader: vertexShader3,
   fragmentShader: fragmentShader3,
   transparent: true,
+  depthWrite: false,
   side: THREE.DoubleSide,
   uniforms: {
     uFrequency: {
@@ -137,6 +140,7 @@ const material4 = new THREE.ShaderMaterial({
   vertexShader: vertexShader4,
   fragmentShader: fragmentShader4,
   transparent: true,
+  depthWrite: false,
   side: THREE.DoubleSide,
   uniforms: {
     uFrequency: {
@@ -165,6 +169,7 @@ const material5 = new THREE.ShaderMaterial({
   vertexShader: vertexShader5,
   fragmentShader: fragmentShader5,
   transparent: true,
+  depthWrite: false,
   side: THREE.DoubleSide,
   uniforms: {
     uFrequency: {
@@ -194,6 +199,7 @@ const material6 = new THREE.ShaderMaterial({
   vertexShader: vertexShader6,
   fragmentShader: fragmentShader6,
   transparent: true,
+  depthWrite: false,
   side: THREE.DoubleSide,
   uniforms: {
     uFrequency: {
@@ -291,7 +297,7 @@ const tick = () =>{
   material5.uniforms.uTime.value = elapsedTime
   material6.uniforms.uTime.value = elapsedTime
 
-  mesh.rotation.z +=0.01
+  //mesh.rotation.z +=0.01
   // Update controls
   controls.update()
 
